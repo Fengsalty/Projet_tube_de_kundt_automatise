@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1265</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tube de Kundt (mesures)</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="labelPort">
+            <property name="text">
+             <string>Sélection du port COM : (5 par défaut)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>( changer le port ferme la liaison précédemment ouverte )</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QSpinBox" name="spinBoxPort"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonPort">
+            <property name="text">
+             <string>Sélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Contrôle GBF</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Fréquence(Hz)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxFreq">
+               <item>
+                <property name="text">
+                 <string>200</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>250</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>315</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>400</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>500</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>630</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>800</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1000</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1250</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1600</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2000</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2500</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3150</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="LblAmplitude">
+               <property name="text">
+                <string>Amplitude 1-5V</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="EditAmpli"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="BtnStart">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="BtnStop">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Coeficient d'absorbtion</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="Editcoef">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButtonCoefficient">
+           <property name="text">
+            <string>Afficher le coefficient d'absorption</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="pushButtonGraphique">
+             <property name="text">
+              <string>Afficher le graphique</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButtonResetGraphique">
+             <property name="text">
+              <string>Reset le graphique</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Dernier coefficient en mémoire :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditDernierCoef">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1265</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionBase_de_donnees"/>
+   <addaction name="separator"/>
+   <addaction name="actionRelancerConnexionOscillo"/>
+  </widget>
+  <action name="actionBase_de_donnees">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/images/bdd.png</normaloff>:/images/bdd.png</iconset>
+   </property>
+   <property name="text">
+    <string>Base de donnees</string>
+   </property>
+  </action>
+  <action name="actionRelancerConnexionOscillo">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/images/oscillo.png</normaloff>:/images/oscillo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Relancer la connexion avec l'oscilloscope</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
